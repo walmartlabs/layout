@@ -1,0 +1,35 @@
+{
+  "name": "layout",
+  "version": "0.0.1",
+  "description": "A React responsive helper component",
+  "main": "src/layout.jsx",
+  "author": "",
+  "scripts": {
+    "showcase": "webpack-dev-server --config showcase/webpack.config.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "babel-core": "^5.1.13",
+    "babel-eslint": "^2.0.2",
+    "babel-loader": "^5.0.0",
+    "component-playground": "0.0.8",
+    "css-loader": "^0.12.0",
+    "expose-loader": "^0.7.0",
+    "html-webpack-plugin": "^1.6.1",
+    "html-webpack-template": "^2.4.0",
+    "json-loader": "^0.5.2",
+    "object-assign": "^2.0.0",
+    "raw-loader": "^0.5.1",
+    "react-bootstrap": "^0.24.4",
+    "react-geomicons": "^2.0.3",
+    "react-router": "^0.13.3",
+    "react-tools": "^0.13.2",
+    "style-loader": "^0.12.1",
+    "stylus-loader": "^1.1.0",
+    "webpack": "^1.8.10",
+    "webpack-dev-server": "^1.10.1"
+  }
+}

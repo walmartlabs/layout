@@ -1,0 +1,5 @@
+<Layout x-small-sizes={[5,4,3]} small-sizes={[2,6,2]} style={{minHeight:50}}>
+  <div style={{background:'#eee', padding:'1em'}}>A</div>
+  <div style={{background:'#ccc', padding:'1em'}}>B</div>
+  <div style={{background:'#eee', padding:'1em'}}>C</div>
+</Layout>

@@ -1,0 +1,258 @@
+@import "./normalize.css";
+@import "./demo.css";
+@import "./syntax.css";
+@import "./codemirror.css";
+
+body {
+  margin: 0;
+}
+
+.guide-header.guide-slider {
+  background: #007dc6;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 302;
+  color: #fff;
+}
+
+.guide-header .guide-container {
+  max-width: 800px;
+  margin: auto;
+  font-size: 24px;
+  padding: 20px 0px;
+  z-index: 1;
+}
+
+.guide-slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.responsive .guide-container-responsive {
+  width: auto;
+  min-width: 320px;
+  max-width: 1366px;
+}
+
+.guide-container {
+  position: relative;
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.guide-slider {
+  position: relative;
+  left: 0;
+  z-index: 301;
+  transition: .2s ease -webkit-transform;
+  transition: .2s ease transform;
+}
+
+.is-navigable .guide-slider {
+  -webkit-transform: translate3d(225px,0,0);
+  transform: translate3d(225px,0,0);
+}
+
+.guide-content {
+  display: block;
+  min-height: 100vh;
+  padding: 90px 0 30px;
+  background: #eee;
+}
+
+.guide-content .playground {
+  margin-top 20px;
+}
+
+.guide-nav-toggle {
+  position: relative;
+  display: block;
+  left: 0;
+  padding: 25px;
+  width: 60px;
+  float: left;
+  top: 0;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.guide-nav-toggle:hover i {
+  color: #ccc;
+}
+
+.guide-heading {
+  font-size: 36px;
+  font-weight: 600;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.component-documentation h3 {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.guide-heading a {
+  margin-left: 10px;
+  font-size: 18px;
+  display: inline;
+}
+
+.guide-heading-reference {
+  position: relative;
+  top: 12px;
+  display: inline-block;
+  margin-right: 10px;
+  color: #aaa;
+  font-size: 22px;
+  vertical-align: top;
+}
+
+.guide-nav {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+  overflow: auto;
+  width: 225px;
+  background: #444;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.showcase-search {
+  position: relative;
+  padding: 20px;
+}
+
+.showcase-typeahead {
+  width: 155px !important;
+}
+
+.showcase-typeahead-cancel {
+  color: #999;
+  position: absolute;
+  top: 36px;
+  left: 150px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.guide-nav-link, .guide-nav-category-name {
+  display: block;
+  position: relative;
+  padding: 5px 15px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.guide-nav-category-name {
+  width: 80%;
+  display: inline-block;
+}
+
+.guide-nav-category-link, .guide-nav-category-link:hover {
+  color: #fff;
+  font-size: 18px;
+}
+
+.guide-nav-link:hover, .guide-nav-category-name:hover, .guide-nav-category-dropdown:hover {
+  color: #fff;
+  background-color: #0070b2;
+}
+
+.guide-nav-category .guide-nav-category-dropdown {
+  width: 20%;
+  height: 100%;
+  color: #fff;
+  display: inline-block;
+  padding: 7px;
+  padding-left: 15px;
+  cursor: pointer;
+  border-left: 1px solid #aaa;
+}
+
+.guide-nav-category-dropdown-list {
+  border: 1px solid #aaa;
+  border-left: none;
+  border-right: none;
+  background-color: #333;
+}
+
+.guide-nav-sublink, .showcase-typeahead-no-results {
+  position: relative;
+  display: block;
+  padding: 3px 15px;
+  margin-left: 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.showcase-typeahead-no-results {
+  padding: 0;
+}
+
+.guide-nav-sublink:before {
+  content: "-";
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.guide-nav-item-reference {
+  position: relative;
+  top: 5px;
+  display: inline-block;
+  width: 14px;
+  margin-right: 5px;
+  margin-left: -4px;
+  color: #999;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: right;
+  vertical-align: top;
+}
+
+pre.code {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: x-small;
+}
+
+span.code {
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: white;
+  color: red;
+  font-family: Courier, Courier New, sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .guide-content .guide-container, .guide-heading {
+    width: auto;
+  }
+}
+
+@import "../../src/showcase/styles/index.styl";
